@@ -28,7 +28,6 @@ string[] FindWords(string[] array1)
     return array;
 }
 
-
 Console.Clear();
 Console.WriteLine("Введите слова или числа через запятую:");
 
@@ -42,4 +41,5 @@ if (array2.Length == 0)
 } else {
     Console.WriteLine("Из введенных данных, мы получили массив из строк, которые меньше или равны 3 символам");
     Console.WriteLine(string.Join(",", array2));
+    
 }
