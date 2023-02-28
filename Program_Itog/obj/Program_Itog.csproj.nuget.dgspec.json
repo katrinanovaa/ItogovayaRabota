@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Катерина\\Desktop\\GB_Itog1\\Program_Itog\\Program_Itog.csproj": {}
+    "C:\\Users\\Катерина\\Desktop\\ItogovayaRabota\\Program_Itog\\Program_Itog.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Катерина\\Desktop\\GB_Itog1\\Program_Itog\\Program_Itog.csproj": {
+    "C:\\Users\\Катерина\\Desktop\\ItogovayaRabota\\Program_Itog\\Program_Itog.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Катерина\\Desktop\\GB_Itog1\\Program_Itog\\Program_Itog.csproj",
+        "projectUniqueName": "C:\\Users\\Катерина\\Desktop\\ItogovayaRabota\\Program_Itog\\Program_Itog.csproj",
         "projectName": "Program_Itog",
-        "projectPath": "C:\\Users\\Катерина\\Desktop\\GB_Itog1\\Program_Itog\\Program_Itog.csproj",
+        "projectPath": "C:\\Users\\Катерина\\Desktop\\ItogovayaRabota\\Program_Itog\\Program_Itog.csproj",
         "packagesPath": "C:\\Users\\Катерина\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Катерина\\Desktop\\GB_Itog1\\Program_Itog\\obj\\",
+        "outputPath": "C:\\Users\\Катерина\\Desktop\\ItogovayaRabota\\Program_Itog\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Катерина\\AppData\\Roaming\\NuGet\\NuGet.Config"

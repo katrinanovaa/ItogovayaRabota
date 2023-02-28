@@ -14,32 +14,37 @@ using System.Text;     // используем using для работы со с
 
 string[] FindWords(string[] array1)
 {
-    int stringLength = 3;     // задаем длину отбора строк в методе. При желании можно сделать ввод в консоли
+    int stringLength = 3;     // задаем длину отбора строк в методе. При желании можно сделать ввод с консоли
     StringBuilder readWords = new StringBuilder();
     for(int i = 0; i < array1.Length; i++)
     {
-        if(array1[i].Trim().Length <= stringLength)
+        if(array1[i].Trim().Length <= stringLength)     //Trim() - убирает пробелы в начале и в конце строки
         {
             readWords.Append(array1[i].Trim());
             readWords.Append(",");
         }
     }
-        string[] array = readWords.ToString().Split(",",StringSplitOptions.RemoveEmptyEntries);  
+    string[] array = readWords.ToString().Split(",",StringSplitOptions.RemoveEmptyEntries);  
     return array;
 }
 
-Console.Clear();
-Console.WriteLine("Введите слова или числа через запятую:");
-
-StringBuilder readWords = new StringBuilder(Console.ReadLine()!);
-string[] array = readWords.ToString().Split(",",StringSplitOptions.RemoveEmptyEntries);   //заменяем "," на пробелы, а потом пробелы являются разделителями в строке
-string[] array2 = FindWords(array);
-
-if (array2.Length == 0)
+void Main()
 {
-    Console.WriteLine("Нет длины меньше трех символов");
-} else {
-    Console.WriteLine("Из введенных данных, мы получили массив из строк, которые меньше или равны 3 символам");
-    Console.WriteLine(string.Join(",", array2));
-    
+    Console.Clear();
+    Console.WriteLine("Введите слова или числа через запятую:");
+    StringBuilder readWords = new StringBuilder(Console.ReadLine()!);
+    string[] array = readWords.ToString().Split(",",StringSplitOptions.RemoveEmptyEntries);   //заменяем "," на пробелы, а потом пробелы являются разделителями в строке
+    string[] array2 = FindWords(array);
+
+    if (array2.Length == 0)
+    {
+        Console.WriteLine("Длины меньше трех символов здесь нет, увы:(");
+    } 
+    else 
+    {
+        Console.WriteLine("Из введенных данных, мы получили массив из строк, которые меньше или равны 3 символам:");
+        Console.WriteLine(string.Join(", ", array2));
+    }
 }
+
+Main();
